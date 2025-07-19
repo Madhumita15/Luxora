@@ -11,7 +11,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import ProductCategory from './pages/ProductCategory'
 import { getCartContext } from './context/CartContext'
-import ProtectedRoute from './component/ProtectedRoute'
+import ProtectedRoute from './components/ProtectedRoute'
 
 
 function App() {

@@ -2,8 +2,8 @@
 import { useState } from "react"
 import { getData } from "../context/DataContext"
 import { Menu} from "lucide-react" 
-import FilterProduct from "../component/FilterProduct";
-import { ProductCard } from "../component/ProductCard";
+import FilterProduct from "../components/FilterProduct";
+import { ProductCard } from "../components/ProductCard";
 import loadingAnimation from '../assets/gradient loader 01.json'
 import Lottie from "react-lottie";
 

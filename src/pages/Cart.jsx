@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { getCartContext } from "../context/CartContext";
 import { NavLink } from "react-router-dom";
-import CartList from "../component/CartList";
-import OrderInfo from "../component/OrderInfo";
-import DeliveryInfo from "../component/DeliveryInfo";
+import CartList from "../components/CartList";
+import OrderInfo from "../components/OrderInfo";
+import DeliveryInfo from "../components/DeliveryInfo";
 
 function Cart({ location, getLocation }) {
   const { cartData, handleDelete, updatedQuantity } = getCartContext();
-  
 
   const totalPrice = cartData.reduce(
     (sum, cur) => sum + cur.price * cur.quantity,
@@ -40,7 +39,7 @@ function Cart({ location, getLocation }) {
                   <OrderInfo totalPrice={totalPrice} />
 
                   {/* Delivery Info */}
-                  <DeliveryInfo location={location} getLocation={getLocation}/>
+                  <DeliveryInfo location={location} getLocation={getLocation} />
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import Carousel from '../component/carousel';
-import Features from '../component/Features';
+import Features from '../components/Features';
+import Carousel from '../components/carousel';
 
 function Home() {
     return ( 

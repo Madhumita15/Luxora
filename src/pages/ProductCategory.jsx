@@ -7,7 +7,7 @@ import { FaChevronLeft,} from "react-icons/fa";
 import { getCartContext } from "../context/CartContext";
 import Lottie from "react-lottie";
 import loadingAnimation from "../assets/Confetti - Animation 01.json";
-import CategoryListProduct from "../component/CategoryListProduct";
+import CategoryListProduct from "../components/CategoryListProduct";
 
 function ProductCategory() {
   const [categorytData, setCategoryData] = useState([]);
