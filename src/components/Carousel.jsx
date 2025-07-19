@@ -7,11 +7,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { Category } from "./Category";
 import { NavLink } from "react-router-dom";
 
-function Carousel() {
-  const { apiData } = getData();
-  console.log(apiData.slice(0, 7));
-
-  const SampleNextArrow = (props) => {
+const SampleNextArrow = (props) => {
     const { onClick } = props;
     return (
       <button
@@ -41,6 +37,12 @@ function Carousel() {
     );
   };
 
+
+function Carousel() {
+  const { apiData } = getData();
+  console.log(apiData.slice(0, 7));
+
+  
   var settings = {
     dots: false,
     infinite: true,
